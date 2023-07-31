@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://weixingw.github.io/sitemap.xml
+Sitemap: https://weixingW.github.io/sitemap.xml
