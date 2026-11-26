@@ -56,19 +56,13 @@ a { color: inherit; text-decoration: none; }
   padding: 56px 24px 40px;
 }
 
-/* Header */
+/* Header: text + token portrait */
 .intro {
   display: grid;
-  grid-template-columns: 112px 1fr;
-  gap: 24px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 248px;
+  gap: 40px;
+  align-items: start;
   padding-bottom: 28px;
-}
-.photo {
-  display: block;
-  width: 112px;
-  height: 121px;
-  object-fit: cover;
 }
 h1 {
   font-size: 34px;
@@ -77,6 +71,36 @@ h1 {
   letter-spacing: -0.03em;
 }
 .roles { margin-top: 6px; color: var(--muted); }
+.about { margin-top: 18px; }
+
+.token-fig { margin: 4px 0 0; }
+.token-frame { position: relative; }
+.token-frame img,
+.token-frame canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 36 / 39;
+}
+.token-frame img { object-fit: cover; }
+.token-frame canvas {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  cursor: crosshair;
+  touch-action: pan-y;
+}
+.token-fig.is-live img { visibility: hidden; }
+.token-fig.is-live canvas { visibility: visible; }
+.token-fig figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.readout { color: var(--accent); min-height: 1.45em; font-variant-numeric: tabular-nums; }
 
 .links {
   display: flex;
@@ -163,8 +187,8 @@ h2 {
 /* Small screens */
 @media (max-width: 640px) {
   .page { padding-top: 32px; }
-  .intro { grid-template-columns: 84px 1fr; gap: 16px; align-items: start; }
-  .photo { width: 84px; height: 91px; }
+  .intro { grid-template-columns: 1fr; gap: 24px; }
+  .token-fig { max-width: 280px; }
   h1 { font-size: 28px; }
   .rows > li { grid-template-columns: 1fr; gap: 0; padding: 7px 0; }
 }

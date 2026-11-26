@@ -41,8 +41,7 @@
   <main class="page">
 
     <header class="intro">
-      <img class="photo" src="assets/img/portrait.jpg" width="236" height="255" alt="Portrait of Weixing Wang">
-      <div>
+      <div class="intro-text">
         <h1>Weixing Wang</h1>
         <p class="roles">
           PhD Candidate in Computer Science, Hasso Plattner Institute<br>
@@ -54,19 +53,26 @@
           <a href="https://github.com/weixingW" rel="me noopener" target="_blank">GitHub</a>
           <a href="https://www.linkedin.com/in/weixing-wang-me/" rel="me noopener" target="_blank">LinkedIn</a>
         </nav>
+        <p class="about">
+          I am a PhD candidate at the Hasso Plattner Institute, advised by Prof. Christoph Meinel and Prof. Gerard de Melo.
+          I work on large multimodal language models, with a focus on <strong>hallucination detection and mitigation</strong>,
+          <strong>unified vision-language models</strong>, and <strong>LLM post-training</strong>.
+          I am currently an Applied Scientist Intern on Amazon’s Alexa+ post-training team.
+          Before my PhD, I studied Electrical and Computer Engineering at the Technical University of Munich.
+        </p>
       </div>
-    </header>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am a PhD candidate at the Hasso Plattner Institute, advised by Prof. Christoph Meinel and Prof. Gerard de Melo.
-        I work on large multimodal language models, with a focus on <strong>hallucination detection and mitigation</strong>,
-        <strong>unified vision-language models</strong>, and <strong>LLM post-training</strong>.
-        I am currently an Applied Scientist Intern on Amazon’s Alexa+ post-training team.
-        Before my PhD, I studied Electrical and Computer Engineering at the Technical University of Munich.
-      </p>
-    </section>
+      <figure class="token-fig">
+        <div class="token-frame">
+          <img src="assets/img/portrait.jpg" width="236" height="255" alt="Portrait of Weixing Wang">
+          <canvas id="tokens" role="img" aria-label="Portrait of Weixing Wang, rendered as a grid of discrete image tokens"></canvas>
+        </div>
+        <figcaption>
+          <span>36×39 discrete image tokens. Hover or tap to restore.</span>
+          <span class="readout" id="readout" aria-hidden="true"></span>
+        </figcaption>
+      </figure>
+    </header>
 
     <section id="news">
       <h2>News</h2>
@@ -167,11 +173,6 @@
     <footer class="foot">© 2026 Weixing Wang · Last updated November 2026</footer>
   </main>
 
-  <script>
-    // Assemble the email address at runtime to deter simple scrapers.
-    document.querySelectorAll('.js-email').forEach(function (a) {
-      a.href = 'mailto:' + a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
-    });
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
