@@ -7,6 +7,7 @@ index.html              homepage content
 cv.html                 full CV page (also the source of the PDF)
 assets/cv/              generated CV PDF
 404.html                not-found page
+robots.txt, sitemap.xml for search engines (bump <lastmod> in sitemap.xml after edits)
 assets/css/style.css    colors and layout (variables at the top)
 assets/img/portrait.jpg profile photo
 assets/fonts/           self-hosted Inter Tight (SIL OFL)
