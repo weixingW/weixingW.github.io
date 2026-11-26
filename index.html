@@ -1,14 +1,12 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weixing Wang — PhD Candidate, Multimodal Language Models</title>
+  <title>Weixing Wang — PhD Candidate, Hasso Plattner Institute</title>
   <meta name="description" content="Weixing Wang is a PhD candidate at the Hasso Plattner Institute working on hallucination in large vision-language models, unified multimodal models, and LLM post-training.">
   <meta name="author" content="Weixing Wang">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f2f0ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://weixingw.github.io/">
 
   <meta property="og:type" content="profile">
@@ -16,23 +14,10 @@
   <meta property="og:description" content="Hallucination in multimodal models, unified VLMs, LLM post-training. Hasso Plattner Institute.">
   <meta property="og:url" content="https://weixingw.github.io/">
   <meta property="og:image" content="https://weixingw.github.io/assets/img/portrait.jpg">
-  <meta name="twitter:card" content="summary">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/InterTight-Variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/InstrumentSerif-Italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <script>
-    // Set theme before first paint to avoid a flash.
-    (function () {
-      var d = document.documentElement, t = null;
-      try { t = localStorage.getItem('theme'); } catch (e) {}
-      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      d.setAttribute('data-theme', t);
-      d.classList.add('js');
-    })();
-  </script>
 
   <script type="application/ld+json">
   {
@@ -44,280 +29,149 @@
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Technical University of Munich" },
     "url": "https://weixingw.github.io/",
     "sameAs": [
-      "https://www.linkedin.com/in/weixing-wang-me/",
-      "https://github.com/weixingW"
+      "https://scholar.google.de/citations?user=Tc3ZAicAAAAJ",
+      "https://github.com/weixingW",
+      "https://www.linkedin.com/in/weixing-wang-me/"
     ]
   }
   </script>
 </head>
 
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <main class="page">
 
-  <!-- Faint 4-column guide lines, aligned with the 12-column layout grid -->
-  <div class="guides" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-
-  <header class="bar">
-    <div class="wrap grid bar-inner">
-      <a class="bar-name" href="#top" aria-label="Weixing Wang, back to top">
-        <span class="sq" aria-hidden="true"></span><span class="bar-name-full">Weixing Wang</span><span class="bar-name-short">WW</span>
-      </a>
-      <nav class="bar-nav mono" aria-label="Sections">
-        <a href="#research">Research</a>
-        <a href="#publications">Papers</a>
-        <a href="#path">Path</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="bar-right mono">
-        <span class="bar-clock" title="Local time in Berlin">Berlin <span id="clock">—</span></span>
-        <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><span aria-hidden="true"></span></button>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- ───────────────────────── HERO ───────────────────────── -->
-    <section class="hero wrap grid" id="top">
-      <div class="hero-text">
-        <p class="kicker mono">PhD Candidate&nbsp;/&nbsp;Computer Science&nbsp;/&nbsp;Hasso Plattner Institute</p>
-
-        <h1 class="name" aria-label="Weixing Wang">
-          <span class="line"><span>Weixing</span></span>
-          <span class="line line-2"><span><em>Wang</em><span class="sq sq-lg" aria-hidden="true"></span></span></span>
-        </h1>
-
-        <p class="lede">
-          I study why multimodal models <em>see</em> things that aren’t there — and how to make them stop.
-          My research spans hallucination detection &amp; mitigation, unified vision-language models, and LLM post-training.
+    <header class="intro">
+      <img class="photo" src="assets/img/portrait.jpg" width="236" height="255" alt="Portrait of Weixing Wang">
+      <div>
+        <h1>Weixing Wang</h1>
+        <p class="roles">
+          PhD Candidate in Computer Science, Hasso Plattner Institute<br>
+          Applied Scientist Intern, Amazon
         </p>
-
-        <dl class="facts">
-          <div><dt class="mono">Now</dt><dd>Applied Scientist Intern, Amazon — Alexa+ post-training</dd></div>
-          <div><dt class="mono">PhD</dt><dd>Hasso Plattner Institute, with Prof. Christoph Meinel &amp; Prof. Gerard de Melo</dd></div>
-          <div><dt class="mono">Before</dt><dd>MSc &amp; BSc, Technical University of Munich · Tsinghua AIR</dd></div>
-        </dl>
+        <nav class="links" aria-label="Profiles">
+          <a class="js-email" data-u="weixing96dw" data-d="gmail.com" href="#">Email</a>
+          <a href="https://scholar.google.de/citations?user=Tc3ZAicAAAAJ" rel="me noopener" target="_blank">Google Scholar</a>
+          <a href="https://github.com/weixingW" rel="me noopener" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/weixing-wang-me/" rel="me noopener" target="_blank">LinkedIn</a>
+        </nav>
       </div>
+    </header>
 
-      <figure class="token-fig">
-        <div class="token-frame">
-          <img src="assets/img/portrait.jpg" width="236" height="255" alt="Portrait of Weixing Wang">
-          <canvas id="tokens" role="img" aria-label="Portrait of Weixing Wang, rendered as a grid of discrete image tokens"></canvas>
-        </div>
-        <figcaption class="mono">
-          <span>Fig. 0 — Portrait as 36×39 discrete tokens, K=8. Hover to edit latents.</span>
-          <span class="readout" id="readout" aria-hidden="true"></span>
-        </figcaption>
-      </figure>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a PhD candidate at the Hasso Plattner Institute, advised by Prof. Christoph Meinel and Prof. Gerard de Melo.
+        I work on large multimodal language models, with a focus on <strong>hallucination detection and mitigation</strong>,
+        <strong>unified vision-language models</strong>, and <strong>LLM post-training</strong>.
+        I am currently an Applied Scientist Intern on Amazon’s Alexa+ post-training team.
+        Before my PhD, I studied Electrical and Computer Engineering at the Technical University of Munich.
+      </p>
     </section>
 
-    <!-- ───────────────────────── RESEARCH ───────────────────────── -->
-    <section class="section wrap grid reveal" id="research">
-      <div class="section-label">
-        <span class="mono">01</span>
-        <h2>Research</h2>
-      </div>
-      <div class="section-body">
-        <ol class="themes">
-          <li>
-            <span class="mono theme-idx">A</span>
-            <h3>Hallucination</h3>
-            <p>Detecting and mitigating hallucinations in vision-language and diffusion language models — from editing the latents of discrete image tokens to reading the decoding trace.</p>
-            <p class="mono theme-refs"><a href="#pub-neurips25">NeurIPS ’25</a> <a href="#pub-iclr26">ICLR ’26</a></p>
-          </li>
-          <li>
-            <span class="mono theme-idx">B</span>
-            <h3>Unified multimodal models</h3>
-            <p>Models that understand and generate within a single architecture: mitigation methods tailored to unified VLMs, and benchmarks for whether their answers agree across tasks.</p>
-            <p class="mono theme-refs"><a href="#pub-wacv27">WACV ’27</a></p>
-          </li>
-          <li>
-            <span class="mono theme-idx">C</span>
-            <h3>Post-training &amp; evaluation</h3>
-            <p>Instruction following for long-context conversational models, aligning LLMs for few-shot in-context learning, and LLMs for argument mining.</p>
-            <p class="mono theme-refs"><a href="#pub-arxiv24">arXiv ’24</a> <a href="#pub-lrec26">LREC ’26</a></p>
-          </li>
-        </ol>
-      </div>
+    <section id="news">
+      <h2>News</h2>
+      <ul class="rows">
+        <li><time class="when" datetime="2026">2026</time><p><em>Beyond Accuracy</em> accepted to <strong>WACV 2027</strong>.</p></li>
+        <li><time class="when" datetime="2026-06">Jun 2026</time><p>Joined Amazon as an Applied Scientist Intern (Alexa+ post-training).</p></li>
+        <li><time class="when" datetime="2026">2026</time><p>Stance classification paper accepted to <strong>LREC 2026</strong> as an oral.</p></li>
+        <li><time class="when" datetime="2026">2026</time><p><em>TraceDet</em> accepted to <strong>ICLR 2026</strong>.</p></li>
+        <li><time class="when" datetime="2025">2025</time><p><em>Image Tokens Matter</em> accepted to <strong>NeurIPS 2025</strong>.</p></li>
+      </ul>
     </section>
 
-    <!-- ───────────────────────── NEWS ───────────────────────── -->
-    <section class="section wrap grid reveal" id="news">
-      <div class="section-label">
-        <span class="mono">02</span>
-        <h2>News</h2>
-      </div>
-      <div class="section-body">
-        <ul class="rows news">
-          <li><time class="mono" datetime="2026">2026</time><p><em>Beyond Accuracy</em> — cross-task consistency in unified multimodal models — accepted to <strong>WACV 2027</strong>.</p></li>
-          <li><time class="mono" datetime="2026-06">Jun 2026</time><p>Joined <strong>Amazon</strong> as an Applied Scientist Intern on the Alexa+ post-training team.</p></li>
-          <li><time class="mono" datetime="2026">2026</time><p>Emotion-lexicon features for stance classification accepted to <strong>LREC 2026</strong> as an <strong>oral</strong>.</p></li>
-          <li><time class="mono" datetime="2026">2026</time><p><em>TraceDet</em> — hallucination detection for diffusion LLMs — accepted to <strong>ICLR 2026</strong>.</p></li>
-          <li><time class="mono" datetime="2025">2025</time><p><em>Image Tokens Matter</em> accepted to <strong>NeurIPS 2025</strong>.</p></li>
-        </ul>
-      </div>
+    <section id="publications">
+      <h2>Publications</h2>
+      <!-- To add links, put them inside .pub-links, e.g.
+           <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> <a href="https://github.com/...">Code</a> -->
+      <ul class="rows pubs">
+        <li>
+          <span class="when">WACV 2027</span>
+          <div>
+            <p class="title">Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models</p>
+            <p class="authors"><span class="me">W. Wang</span>, L. Zekas, A. Hackl, C. A. Auga, P. Shahabinejad, J. Otholt, …, G. de Melo</p>
+            <p class="pub-links"></p>
+          </div>
+        </li>
+        <li>
+          <span class="when">LREC 2026 <span class="tag">Oral</span></span>
+          <div>
+            <p class="title">Improving Neural Argumentative Stance Classification in Controversial Topics with Emotion-Lexicon Features</p>
+            <p class="authors">M. Y. Abkenar, <span class="me">W. Wang</span>, M. Stede, D. Picca, M. A. Finlayson, P. Ioannidis</p>
+            <p class="pub-links"></p>
+          </div>
+        </li>
+        <li>
+          <span class="when">ICLR 2026</span>
+          <div>
+            <p class="title">TraceDet: Hallucination Detection from the Decoding Trace of Diffusion Large Language Models</p>
+            <p class="authors">S. Chang, J. Yu, <span class="me">W. Wang</span>, Y. Chen, J. Yu, P. Torr, J. Gu</p>
+            <p class="pub-links"></p>
+          </div>
+        </li>
+        <li>
+          <span class="when">NeurIPS 2025</span>
+          <div>
+            <p class="title">Image Tokens Matter: Mitigating Hallucination in Discrete Tokenizer-based Large Vision-Language Models via Latent Editing</p>
+            <p class="authors"><span class="me">W. Wang</span>, Z. Ding, J. Gu, R. Cao, C. Meinel, G. de Melo, H. Yang</p>
+            <p class="pub-links"></p>
+          </div>
+        </li>
+        <li>
+          <span class="when">arXiv 2024</span>
+          <div>
+            <p class="title">SeCoKD: Aligning Large Language Models for In-Context Learning with Fewer Shots</p>
+            <p class="authors"><span class="me">W. Wang</span>, H. Yang, C. Meinel</p>
+            <p class="pub-links"></p>
+          </div>
+        </li>
+      </ul>
+      <p class="more"><a href="https://scholar.google.de/citations?user=Tc3ZAicAAAAJ" rel="noopener" target="_blank">Full list on Google Scholar →</a></p>
     </section>
 
-    <!-- ───────────────────────── PUBLICATIONS ───────────────────────── -->
-    <section class="section wrap grid reveal" id="publications">
-      <div class="section-label">
-        <span class="mono">03</span>
-        <h2>Publications</h2>
-        <p class="mono section-note"><span id="pub-count">05</span> shown</p>
-      </div>
-      <div class="section-body">
-        <div class="filters mono" role="group" aria-label="Filter publications">
-          <button type="button" data-filter="all" aria-pressed="true">All</button>
-          <button type="button" data-filter="first" aria-pressed="false">First author</button>
-          <button type="button" data-filter="hallucination" aria-pressed="false">Hallucination</button>
-          <button type="button" data-filter="multimodal" aria-pressed="false">Multimodal</button>
-          <button type="button" data-filter="language" aria-pressed="false">Language</button>
-        </div>
-
-        <!--
-          To add links, put them inside .pub-links, e.g.
-          <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> <a href="https://github.com/...">Code</a>
-        -->
-        <ol class="rows pubs">
-          <li class="pub" id="pub-wacv27" data-tags="first multimodal">
-            <div class="pub-venue mono"><span>WACV</span><span>2027</span></div>
-            <div class="pub-body">
-              <h3>Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models</h3>
-              <p class="authors"><span class="me">W. Wang</span>, L. Zekas, A. Hackl, C. A. Auga, P. Shahabinejad, J. Otholt, …, G. de Melo</p>
-              <p class="pub-links mono"></p>
-            </div>
-          </li>
-          <li class="pub" id="pub-lrec26" data-tags="language">
-            <div class="pub-venue mono"><span>LREC</span><span>2026</span><span class="tag">Oral</span></div>
-            <div class="pub-body">
-              <h3>Improving Neural Argumentative Stance Classification in Controversial Topics with Emotion-Lexicon Features</h3>
-              <p class="authors">M. Y. Abkenar, <span class="me">W. Wang</span>, M. Stede, D. Picca, M. A. Finlayson, P. Ioannidis</p>
-              <p class="pub-links mono"></p>
-            </div>
-          </li>
-          <li class="pub" id="pub-iclr26" data-tags="hallucination language">
-            <div class="pub-venue mono"><span>ICLR</span><span>2026</span></div>
-            <div class="pub-body">
-              <h3>TraceDet: Hallucination Detection from the Decoding Trace of Diffusion Large Language Models</h3>
-              <p class="authors">S. Chang, J. Yu, <span class="me">W. Wang</span>, Y. Chen, J. Yu, P. Torr, J. Gu</p>
-              <p class="pub-links mono"></p>
-            </div>
-          </li>
-          <li class="pub" id="pub-neurips25" data-tags="first hallucination multimodal">
-            <div class="pub-venue mono"><span>NeurIPS</span><span>2025</span></div>
-            <div class="pub-body">
-              <h3>Image Tokens Matter: Mitigating Hallucination in Discrete Tokenizer-based Large Vision-Language Models via Latent Editing</h3>
-              <p class="authors"><span class="me">W. Wang</span>, Z. Ding, J. Gu, R. Cao, C. Meinel, G. de Melo, H. Yang</p>
-              <p class="pub-links mono"></p>
-            </div>
-          </li>
-          <li class="pub" id="pub-arxiv24" data-tags="first language">
-            <div class="pub-venue mono"><span>arXiv</span><span>2024</span></div>
-            <div class="pub-body">
-              <h3>SeCoKD: Aligning Large Language Models for In-Context Learning with Fewer Shots</h3>
-              <p class="authors"><span class="me">W. Wang</span>, H. Yang, C. Meinel</p>
-              <p class="pub-links mono"></p>
-            </div>
-          </li>
-        </ol>
-      </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="rows">
+        <li>
+          <span class="when">2026 – now</span>
+          <div>
+            <p class="title">Amazon <span class="sub">· Applied Scientist Intern, Alexa+ Post-Training</span></p>
+            <p class="desc">Built an in-house instruction-following benchmark for long-context conversational models, from proposal to reporting; findings informed training recipes. Working on KV-cache compaction for long procedural documents.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2023 – now</span>
+          <div>
+            <p class="title">Hasso Plattner Institute <span class="sub">· PhD Researcher</span></p>
+            <p class="desc">Hallucination detection and mitigation for vision-language and diffusion language models, including the first mitigation method tailored to unified VLMs. Collaboration with Bundesdruckerei on benchmarking LLMs for argument mining.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2021</span>
+          <div>
+            <p class="title">Institute for AI Industry Research, Tsinghua University <span class="sub">· Research Assistant</span></p>
+            <p class="desc">Large-scale causal graphs of symptoms and herbal treatments in Traditional Chinese Medicine; graph-based causal discovery consistent with expert findings.</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- ───────────────────────── PATH ───────────────────────── -->
-    <section class="section wrap grid reveal" id="path">
-      <div class="section-label">
-        <span class="mono">04</span>
-        <h2>Path</h2>
-      </div>
-      <div class="section-body">
-        <ol class="rows path">
-          <li>
-            <span class="when mono">2026 —</span>
-            <div>
-              <h3>Amazon</h3>
-              <p class="role mono">Applied Scientist Intern · Alexa+ Post-Training</p>
-              <p>Built an in-house instruction-following benchmark for long-context conversational models — from proposal and design through quality assessment and reporting — and turned the findings into evidence for training recipes. Also working on KV-cache compaction for long procedural documents in agentic settings.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when mono">2023 —</span>
-            <div>
-              <h3>Hasso Plattner Institute</h3>
-              <p class="role mono">PhD Candidate, Computer Science · Advised by Christoph Meinel &amp; Gerard de Melo</p>
-              <p>Hallucination detection and mitigation for vision-language and diffusion language models, including the first mitigation method tailored to unified VLM architectures. In collaboration with Bundesdruckerei, benchmarking LLMs on argument-mining subtasks.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when mono">2021</span>
-            <div>
-              <h3>Institute for AI Industry Research, Tsinghua University</h3>
-              <p class="role mono">Research Assistant</p>
-              <p>Built large-scale causal diagrams linking symptoms and herbal treatments in Traditional Chinese Medicine, with graph-based causal discovery that agreed closely with domain experts’ empirical findings.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when mono">2020 — 23</span>
-            <div>
-              <h3>Technical University of Munich</h3>
-              <p class="role mono">MSc, Electrical &amp; Computer Engineering</p>
-            </div>
-          </li>
-          <li>
-            <span class="when mono">2017 — 20</span>
-            <div>
-              <h3>Technical University of Munich</h3>
-              <p class="role mono">BSc, Electrical &amp; Computer Engineering</p>
-            </div>
-          </li>
-        </ol>
-      </div>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="rows">
+        <li><span class="when">2023 – now</span><p class="title">PhD, Computer Science <span class="sub">· Hasso Plattner Institute</span></p></li>
+        <li><span class="when">2020 – 2023</span><p class="title">MSc, Electrical and Computer Engineering <span class="sub">· Technical University of Munich</span></p></li>
+        <li><span class="when">2017 – 2020</span><p class="title">BSc, Electrical and Computer Engineering <span class="sub">· Technical University of Munich</span></p></li>
+      </ul>
     </section>
 
-    <!-- ───────────────────────── CONTACT ───────────────────────── -->
-    <section class="section wrap grid reveal" id="contact">
-      <div class="section-label">
-        <span class="mono">05</span>
-        <h2>Contact</h2>
-      </div>
-      <div class="section-body">
-        <ul class="links">
-          <li>
-            <a class="js-email" data-u="weixing96dw" data-d="gmail.com" href="#contact">
-              <span class="label">Email</span>
-              <span class="detail mono"><span data-email-text>weixing96dw [at] gmail [dot] com</span> <span class="arrow" aria-hidden="true">↗</span></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/weixing-wang-me/" rel="me noopener" target="_blank">
-              <span class="label">LinkedIn</span>
-              <span class="detail mono">/in/weixing-wang-me <span class="arrow" aria-hidden="true">↗</span></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/weixingW" rel="me noopener" target="_blank">
-              <span class="label">GitHub</span>
-              <span class="detail mono">@weixingW <span class="arrow" aria-hidden="true">↗</span></span>
-            </a>
-          </li>
-          <!-- Add Google Scholar once you have the profile URL:
-          <li>
-            <a href="https://scholar.google.com/citations?user=XXXX" rel="me noopener" target="_blank">
-              <span class="label">Scholar</span>
-              <span class="detail mono">Google Scholar <span class="arrow" aria-hidden="true">↗</span></span>
-            </a>
-          </li>
-          -->
-        </ul>
-        <p class="mono langs">Speaks — English · 中文 · Deutsch</p>
-      </div>
-    </section>
+    <footer class="foot">© 2026 Weixing Wang · Last updated November 2026</footer>
   </main>
 
-  <footer class="foot wrap grid mono">
-    <span>© 2026 Weixing Wang</span>
-    <span class="foot-mid">Hand-coded. No frameworks, no trackers.</span>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-
-  <script src="assets/js/main.js" defer></script>
+  <script>
+    // Assemble the email address at runtime to deter simple scrapers.
+    document.querySelectorAll('.js-email').forEach(function (a) {
+      a.href = 'mailto:' + a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+    });
+  </script>
 </body>
 </html>

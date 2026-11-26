@@ -1,27 +1,23 @@
 # weixingw.github.io
 
-Personal website of Weixing Wang — plain HTML/CSS/JS, served by GitHub Pages. No build step.
+Personal website of Weixing Wang — plain HTML/CSS, served by GitHub Pages. No build step.
 
 ```
 index.html              all content (edit text here)
 404.html                not-found page
-assets/css/style.css    design tokens at the top (colors, fonts, spacing)
-assets/js/main.js       theme toggle, clock, publication filters, token-portrait canvas
-assets/img/portrait.jpg source image for the token portrait
-assets/fonts/           self-hosted fonts (SIL OFL)
+assets/css/style.css    colors and layout (variables at the top)
+assets/img/portrait.jpg profile photo
+assets/fonts/           self-hosted Inter Tight (SIL OFL)
 ```
 
 ## Common edits
 
-- **Add a paper**: copy one `<li class="pub">` block in `index.html`. `data-tags` drives the filters
-  (`first`, `hallucination`, `multimodal`, `language`). Put links inside `<p class="pub-links mono">`.
+- **Add a paper**: copy one `<li>` in the publications list. Put links inside `<p class="pub-links">`,
+  e.g. `<a href="https://arxiv.org/abs/...">arXiv</a>`.
 - **Add news**: copy one `<li>` in the `#news` list.
-- **Change accent color**: `--accent` in `style.css` (separate values for light and dark).
-- **Portrait**: replace `assets/img/portrait.jpg` (roughly 14:15, face centered).
+- **Accent color**: `--accent` in `style.css` (light and dark values).
 
 ## Preview locally
-
-The token portrait reads image pixels, which browsers block on `file://`, so use a local server:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
@@ -30,4 +26,4 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 ## Deploy
 
-Push to `main`. GitHub Pages serves the repository root (Settings → Pages → Deploy from branch → `main` / root).
+Push to `master`. GitHub Pages serves the repository root (Settings → Pages → Deploy from branch → `master` / root).

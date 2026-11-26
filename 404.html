@@ -1,35 +1,19 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 — Weixing Wang</title>
+  <title>Page not found — Weixing Wang</title>
   <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script>
-    (function () {
-      var t = null;
-      try { t = localStorage.getItem('theme'); } catch (e) {}
-      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', t);
-    })();
-  </script>
-  <style>
-    .nf { min-height: 100svh; align-content: center; row-gap: 28px; }
-    .nf > * { grid-column: 1 / -1; }
-    .nf h1 { font-weight: 500; font-size: clamp(96px, 22vw, 340px); line-height: .82; letter-spacing: -.06em; }
-    .nf h1 em { color: var(--accent); }
-    .nf p { font-size: clamp(20px, 2vw, 28px); max-width: 30ch; }
-    .nf a { border-bottom: 1px solid var(--accent); }
-  </style>
 </head>
 <body>
-  <main class="wrap grid nf">
-    <p class="mono" style="color: var(--muted)">Error 404</p>
-    <h1>4<em>0</em>4</h1>
-    <p>This page was <em>hallucinated</em> — there is no token here.</p>
-    <p class="mono"><a href="/">← Back to the grounded version</a></p>
+  <main class="page">
+    <h1>404</h1>
+    <p class="roles">This page doesn’t exist.</p>
+    <p class="more"><a href="/">← Back to the homepage</a></p>
   </main>
 </body>
 </html>
