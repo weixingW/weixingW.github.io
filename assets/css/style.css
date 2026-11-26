@@ -119,6 +119,30 @@ h1 {
 .more a:hover,
 .pub-links a:hover { color: var(--accent); border-color: var(--accent); }
 
+/* Job-market callout */
+.callout {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+.callout-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+.callout a {
+  color: var(--accent);
+  font-weight: 500;
+  border-bottom: 1px solid currentColor;
+}
+.callout a:hover { border-bottom-color: transparent; }
+
 /* Sections */
 section {
   padding: 22px 0 24px;
@@ -191,4 +215,71 @@ h2 {
   .token-fig { max-width: 280px; }
   h1 { font-size: 28px; }
   .rows > li { grid-template-columns: 1fr; gap: 0; padding: 7px 0; }
+}
+
+/* ---------- CV page ---------- */
+.cv-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cv-nav a { border-bottom: 1px solid var(--line); }
+.cv-nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.cv-head { padding-bottom: 24px; }
+.cv-contact { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 2px 8px; font-size: 15px; }
+.cv-contact > span { color: var(--muted); }
+.cv-contact a { border-bottom: 1px solid var(--line); }
+.cv-contact a:hover { color: var(--accent); border-color: var(--accent); }
+
+.cv .rows > li { grid-template-columns: 164px 1fr; }
+.cv-sub {
+  margin: 14px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cv-sub:first-of-type { margin-top: 0; }
+.bullets {
+  margin-top: 4px;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--muted);
+}
+.bullets li { padding: 1px 0; }
+.bullets li::marker { color: var(--line); }
+.venue { color: var(--muted); font-size: 14px; font-style: italic; }
+.venue a { font-style: normal; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line); }
+.venue a:hover { color: var(--accent); border-color: var(--accent); }
+
+@media (max-width: 640px) {
+  .cv .rows > li { grid-template-columns: 1fr; }
+}
+
+/* ---------- Print (used for the CV PDF) ---------- */
+@media print {
+  @page { size: A4; margin: 13mm 14mm; }
+  :root {
+    --bg: #ffffff;
+    --ink: #000000;
+    --muted: #3d3d3d;
+    --line: #cfcfcf;
+    --accent: #1f2fd6;
+  }
+  html { background: #fff; }
+  body { font-size: 10pt; line-height: 1.38; }
+  .page { max-width: none; padding: 0; }
+  .cv-nav, .foot { display: none; }
+  h1 { font-size: 22pt; }
+  .cv-head { padding-bottom: 10px; }
+  .cv-contact { font-size: 9.5pt; }
+  section { padding: 8px 0 10px; }
+  h2 { margin-bottom: 4px; font-size: 8.5pt; }
+  .rows > li, .pubs > li { padding: 3px 0; break-inside: avoid; }
+  .cv .rows > li { grid-template-columns: 134px 1fr; }
+  .authors, .venue, .cv-sub { font-size: 9.5pt; }
+  .callout, .callout-dot, .tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .callout { margin-top: 10px; padding: 6px 10px; }
+  a { border-bottom: 0 !important; }
 }

@@ -7,7 +7,10 @@
 
   /* ---------- Email (assembled at runtime to deter simple scrapers) ---------- */
   document.querySelectorAll('.js-email').forEach(function (a) {
-    a.href = 'mailto:' + a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+    var addr = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+    a.href = 'mailto:' + addr;
+    var t = a.querySelector('[data-email-text]');
+    if (t) t.textContent = addr;
   });
 
   /* ==========================================================================
